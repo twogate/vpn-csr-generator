@@ -21,7 +21,7 @@ if [[ $? -ne 0 ]] ; then
   exit 1
 fi
 
-openssl req -new -sha256 -key $private_file -out $csr_file -subj "/CN=$common_name.client.vpn.twogate.net/emailAddress=$email"
+openssl req -new -sha256 -key $private_file -out $csr_file -subj "/CN=$common_name/emailAddress=$email"
 
 if [[ $? -ne 0 ]] ; then
   echo "CSR作成エラー: 手動で行ってください"
