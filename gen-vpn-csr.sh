@@ -3,8 +3,8 @@
 echo "TwoGate CSR Generator"
 
 if [ $# -ne 2 ]; then
-  echo "使用方法: bash gen-vpn-csr.sh email@example.com hostname" 1>&2
-  echo "メールアドレスとホスト名の順に引数に入力します" 1>&2
+  echo "使用方法: bash gen-vpn-csr.sh email@example.com hostname.example.com" 1>&2
+  echo "メールアドレスとCommon Nameの順に引数に入力します" 1>&2
   exit 1
 fi
 
